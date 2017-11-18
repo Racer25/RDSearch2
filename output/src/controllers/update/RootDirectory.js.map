@@ -1,0 +1,1 @@
+{"version":3,"file":"RootDirectory.js","sourceRoot":"","sources":["../../../../src/controllers/update/RootDirectory.ts"],"names":[],"mappings":";;AAAA;;GAEG;AACH,kBAAe,MAAM,SAAS,GAAC,eAAe,CAAC","sourcesContent":["/**\r\n * Root directory\r\n */\r\nexport default () => __dirname+\"/../../../../\";"]}

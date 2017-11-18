@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!-- Head generic Content -->
+        <% include ../partials/headContent %>
+
+        <style>
+            body,h1 {font-family: "Raleway", sans-serif}
+            body, html {height: 100%}
+            .bgimg {
+                background-image: url('/static/imgs/fond.jpg');
+                background-attachment: fixed;
+                min-height: 100%;
+                background-position: center;
+                background-size: cover;
+            }
+        </style>
+
+        <!-- My AJAX -->
+        <script src="/static/js/ajax/ajaxDiseaseInfo.js"></script>
+
+        <!-- My DOM scripts -->
+        <script src="/static/js/dom/domDiseaseInfo.js"></script>
+        <script src="/static/js/dom/domSymptoms.js"></script>
+
+        <!--Libs-->
+        <script src="/static/libs/Chart.min.js"></script>
+    </head>
+    <body>
+        <div id="orphanetID" value="<%=orphanetID%>" style="display:none"></div>
+        <div class="bgimg w3-display-container w3-animate-opacity w3-text-black">
+            <div class="w3-display-topleft w3-padding-large w3-xlarge">
+                Logo
+            </div>
+            <div class="w3-row">
+                <div class="w3-col w3-left w3-container" style="width:150px"></div>
+                <div class="w3-col w3-right w3-container" style="width:150px"></div>
+                <div class="w3-container w3-rest" style="display:block;margin-right:auto;margin-left:auto">
+
+                    <div class="w3-panel w3-white w3-border" id="diseaseNameDiv"></div>
+                    <div class="w3-panel w3-white w3-border" id="textualInformationDiv"></div>
+                    <div class="w3-panel w3-white w3-border">
+                        <h2><b>Statistics: </b></h2>
+                        <div class="w3-panel w3-white w3-border chart-container">
+                            <canvas id="graphPublicationsPerYear"></canvas>
+                        </div>
+                    </div>
+                    <div class="w3-panel w3-white w3-border" id="mostCitedPublicationsDiv">
+                        <h2><b>Top 3 of most cited publications: </b></h2>
+                    </div>
+                    <div class="w3-panel w3-white w3-border">
+                        <h2><b>Symptoms recovered by TextMining: </b></h2>
+                        <div class="w3-panel w3-border w3-round-small" id="symptomsCloudPanel"></div>
+                    </div>
+                    <h4>Go back to <a href="/">homepage</a></h4>
+                </div>
+            </div>
+
+            <div class="w3-display-bottomleft w3-padding-large">
+                Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+            </div>
+        </div>
+
+    </body>
+</html>

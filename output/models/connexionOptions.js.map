@@ -1,0 +1,1 @@
+{"version":3,"file":"connexionOptions.js","sourceRoot":"","sources":["../../src/models/connexionOptions.ts"],"names":[],"mappings":";;AAAW,QAAA,OAAO,GAClB;IACI,IAAI,EAAE,OAAO;IACb,IAAI,EAAE,WAAW;IACjB,IAAI,EAAE,IAAI;IACV,QAAQ,EAAE,MAAM;IAChB,QAAQ,EAAE,EAAE;IACZ,QAAQ,EAAE,WAAW;IACrB,QAAQ,EAAE;QACV,SAAS,GAAG,qBAAqB;KACpC;IACG,WAAW,EAAE,IAAI;CACpB,CAAC"}
